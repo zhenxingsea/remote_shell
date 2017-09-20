@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cat ./server_list.txt | while read line
 do
     host=$(echo $line | cut -d " " -f 1)
@@ -9,5 +11,6 @@ do
     cat $command_file | while read command
     do
         (./run.sh $host $user $password "$command")&
+        wait $!
     done
 done
