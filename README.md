@@ -1,3 +1,6 @@
+# remote_shell
+批量远程执行linux shell命令
+
 安装python和python-fabric
 $apt-get install python
 $pip install fabric
