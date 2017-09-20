@@ -1,1 +1,1 @@
-45.62.100.15:27364 root yin2xing
+127.0.0.1 root root
